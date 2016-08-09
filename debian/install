@@ -1,0 +1,3 @@
+dist/*	/usr/share/vesta
+vesta	/usr/bin
+vesta.desktop	/usr/share/applications

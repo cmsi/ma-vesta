@@ -1,0 +1,8 @@
+#!/bin/sh
+
+DIR=`dirname $0`
+if test -x "$DIR/dist/VESTA"; then
+  $DIR/dist/VESTA "$@"
+else
+  /usr/share/vesta/VESTA "$@"
+fi

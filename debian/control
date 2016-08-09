@@ -1,0 +1,13 @@
+Source: vesta
+Section: non-free
+Priority: optional
+Maintainer: Synge Todo <wistaria@phys.s.u-tokyo.ac.jp>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+
+Package: vesta
+Architecture: any
+Depends: ${misc:Depends}
+Description: VESTA Visualization for Electronic and STructural Analysis
+ VESTA is a 3D isualization system for structural models, volumetric data,
+ and crystal morphologies.
