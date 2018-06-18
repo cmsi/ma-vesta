@@ -1,4 +1,10 @@
-vesta (3.3.0-1) wheezy; urgency=low
+vesta (3.4.4-1) unstable; urgency=low
+
+  * New upstream version 3.4.4
+
+ -- Synge Todo <wistaria@phys.s.u-tokyo.ac.jp>  Sun, 17 Jun 2018 10:35:07 +0900
+
+vesta (3.3.0-1) unstable; urgency=low
 
   * Initial release.
 

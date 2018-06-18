@@ -2,7 +2,9 @@
 
 DIR=`dirname $0`
 if test -x "$DIR/dist/VESTA"; then
+  export LD_LIBRARY_PATH=$DIR/dist:$LD_LIBRARY_PATH
   $DIR/dist/VESTA "$@"
 else
+  export LD_LIBRARY_PATH=/usr/share/vesta:$LD_LIBRARY_PATH
   /usr/share/vesta/VESTA "$@"
 fi
