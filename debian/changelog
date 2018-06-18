@@ -1,3 +1,9 @@
+vesta (3.4.4-2) unstable; urgency=low
+
+  * Fix build script
+
+ -- Synge Todo <wistaria@phys.s.u-tokyo.ac.jp>  Mon, 18 Jun 2018 15:24:27 +0900
+
 vesta (3.4.4-1) unstable; urgency=low
 
   * New upstream version 3.4.4
