@@ -2,12 +2,12 @@ Source: vesta
 Section: non-free
 Priority: optional
 Maintainer: Synge Todo <wistaria@phys.s.u-tokyo.ac.jp>
-Build-Depends: debhelper (>= 8.0.0), libgnome2-0, libgnomeui-0, libgnomevfs2-0
+Build-Depends: debhelper (>= 8.0.0), libgnome2-0, libgnomeui-0, libgnomevfs2-0, libglu1-mesa
 Standards-Version: 3.9.3
 
 Package: vesta
 Architecture: any
 Depends: ${misc:Depends}
-Description: VESTA Visualization for Electronic and STructural Analysis
+Description: VESTA Visualization for Electronic and Structural Analysis
  VESTA is a 3D isualization system for structural models, volumetric data,
  and crystal morphologies.

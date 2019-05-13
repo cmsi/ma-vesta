@@ -7,18 +7,20 @@ set -x
 
 mkdir -p $BUILD_DIR
 cd $BUILD_DIR
-BASE_URL=http://www.geocities.jp/kmo_mma/crystal/download
+BASE_URL=https://jp-minerals.org/vesta/archives
 case "$(dpkg --print-architecture)" in
     amd64)
-        wget -O - $BASE_URL/VESTA-x86_64.tar.bz2 | tar jxf -
+        wget -O - $BASE_URL/$VERSION_BASE/VESTA-x86_64.tar.bz2 | tar jxf -
         mv -f VESTA-x86_64 dist
         ;;
     i386)
-        wget -O - $BASE_URL/VESTA-i686.tar.bz2 | tar jxf -
-        mv -f VESTA-i686 dist
+        echo "32bit OS is not supported"
+        exit 127
         ;;
 esac
 cp -frp $SCRIPT_DIR/debian $SCRIPT_DIR/vesta $SCRIPT_DIR/vesta.desktop $BUILD_DIR
-if test $(lsb_release -c -s) = "stretch"; then
-    cp -frp $SCRIPT_DIR/$(dpkg --print-architecture)/libpng12.so.0 $BUILD_DIR/dist
-fi
+
+cd $BUILD_DIR
+sudo apt-get update
+sudo apt-get -y upgrade
+dpkg-checkbuilddeps 2>&1 | sed 's/dpkg-checkbuilddeps.*dependencies: //' | xargs sudo apt-get -y install
