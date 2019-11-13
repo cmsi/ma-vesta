@@ -10,7 +10,7 @@ echo "VERSION: $VERSION"
 echo "VERSION_BASE: $VERSION_BASE"
 echo "SCRIPT_DIR: $SCRIPT_DIR"
 
-if [ $(lsb_release -s -i) = 'Debian' ]; then
+if [ $(lsb_release -s -i) = 'Debian' -o $(lsb_release -s -i) = 'Ubuntu' ]; then
   BUILD_DIR="$HOME/build/${PACKAGE}_${VERSION_BASE}"
   TARGET_DIR="$HOME/data/pkg/$(lsb_release -s -c)"
   DATA_DIR="$HOME/data/src"
