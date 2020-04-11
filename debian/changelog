@@ -1,3 +1,9 @@
+vesta (3.4.8-1) unstable; urgency=low
+
+  * New upstream version 3.4.8
+
+ -- Synge Todo <wistaria@phys.s.u-tokyo.ac.jp>  Sat, 11 Apr 2020 09:08:52 +0900
+
 vesta (3.4.6-1) unstable; urgency=low
 
   * New upstream version 3.4.6
