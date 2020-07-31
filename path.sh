@@ -3,6 +3,11 @@
 SCRIPT_DIR=$(cd $(dirname $0) && pwd)
 PACKAGE=$(echo $(basename $SCRIPT_DIR) | sed 's/ma-//g')
 VERSION=$(head -1 $SCRIPT_DIR/debian/changelog | cut -d ' ' -f 2 | sed 's/[()]//g')
+if [ $(lsb_release -s -i) = 'Debian' -o $(lsb_release -s -i) = 'Ubuntu' ]; then
+   if [ $(dpkg --print-architecture) = 'i386' ]; then
+      VERSION=$(head -1 $SCRIPT_DIR/debian32/changelog | cut -d ' ' -f 2 | sed 's/[()]//g')
+   fi
+fi
 VERSION_BASE=$(echo $VERSION | cut -d '-' -f 1)
 
 echo "PACKAGE: $PACKAGE"

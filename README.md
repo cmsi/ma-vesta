@@ -8,7 +8,7 @@ A piece of software for obtaining crystal structure and visualizing three-dimens
 
 ### Version
 
-* 3.4.6-1 (13 May 2019)
+* 3.5.2-1
 
 ### Provided packages
 
@@ -17,7 +17,7 @@ A piece of software for obtaining crystal structure and visualizing three-dimens
 ### Target distributions and architectures
 
 * Debian buster/stretch/jessie (amd64)
-* Ubuntu bionic/xenial (amd64)
+* Ubuntu focal/bionic/xenial (amd64)
 
 ### For users
 
