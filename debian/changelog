@@ -1,3 +1,9 @@
+vesta (3.5.5-2) unstable; urgency=low
+
+  * Add launcher's icon
+
+ -- Synge Todo <wistaria@phys.s.u-tokyo.ac.jp>  Thu, 22 Oct 2020 09:03:27 +0900
+
 vesta (3.5.5-1) unstable; urgency=low
 
   * New upstream version 3.5.5
