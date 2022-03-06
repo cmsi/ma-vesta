@@ -15,4 +15,4 @@ cp -rp ${SCRIPT_DIR}/vesta ${SCRIPT_DIR}/vesta.desktop $BUILD_DIR
 
 apt-get update
 apt-get -y upgrade
-dpkg-checkbuilddeps 2>&1 | sed 's/dpkg-checkbuilddeps.*dependencies: //' | xargs sudo apt-get -y install
+dpkg-checkbuilddeps 2>&1 | sed 's/dpkg-checkbuilddeps.*dependencies: //' | xargs apt-get -y install
