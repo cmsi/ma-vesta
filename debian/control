@@ -2,7 +2,7 @@ Source: vesta
 Section: non-free
 Priority: optional
 Maintainer: Synge Todo <wistaria@phys.s.u-tokyo.ac.jp>
-Build-Depends: debhelper (>= 8.0.0), libxtst-dev, libgtk2.0-0, libgtk-3-0, libglu1-mesa
+Build-Depends: debhelper (>= 8.0.0), libxtst-dev, libgtk2.0-0, libgtk-3-0, libgl1, libglu1-mesa
 Standards-Version: 3.9.3
 
 Package: vesta
